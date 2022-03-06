@@ -1806,6 +1806,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ibm/plex@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@ibm/plex@npm:6.0.0"
+  checksum: 1a90ec2ca6c0e7762d2b3ae30bc6cde52f366b9e3568a930af10adcd0f415149119c5f9a3f705e50decb451dd45346e0eb688615fdb1b047ad4a834c9feb3ad7
+  languageName: node
+  linkType: hard
+
 "@jimp/bmp@npm:^0.14.0":
   version: 0.14.0
   resolution: "@jimp/bmp@npm:0.14.0"
@@ -7283,6 +7290,7 @@ __metadata:
   resolution: "gatsby-starter-blog@workspace:."
   dependencies:
     "@fontsource/merriweather-sans": 4.5.3
+    "@ibm/plex": ^6.0.0
     gatsby: ^4.7.2
     gatsby-plugin-feed: ^4.7.0
     gatsby-plugin-gatsby-cloud: ^4.7.0
