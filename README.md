@@ -1,5 +1,11 @@
-<<<<<<< HEAD
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+# yosuke-isoda.com
+
+My website
+
+Below is the original readme.
+
+---
+
 <p align="center">
   <a href="https://www.gatsbyjs.com">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
@@ -102,9 +108,3 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [Build, Deploy, and Host On The Only Cloud Built For Gatsby](https://www.gatsbyjs.com/products/cloud/)
 
 Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
-
-<!-- AUTO-GENERATED-CONTENT:END -->
-=======
-# yosuke-isoda.com
-My website
->>>>>>> 5f8daf0eea62efdd6d9fb8e29794866163fc4bad
