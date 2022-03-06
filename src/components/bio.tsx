@@ -18,9 +18,6 @@ const Bio = () => {
             name
             summary
           }
-          social {
-            twitter
-          }
         }
       }
     }
@@ -32,7 +29,9 @@ const Bio = () => {
 
   return (
     <div className="bio">
-      <StaticImage
+
+
+      {/* <StaticImage
         className="bio-avatar"
         layout="fixed"
         formats={["auto", "webp", "avif"]}
@@ -41,16 +40,18 @@ const Bio = () => {
         height={50}
         quality={95}
         alt="Profile picture"
-      />
-      {author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
+      /> */}
+      {<>
+        <p className="social-links">
+          <a href="https://orcid.org/0000-0003-4445-9908">
+            <img alt="ORCID logo" src="ORCIDiD_iconvector.svg" width="16" height="16" />
+            0000-0003-4445-9908</a> | <a href="https://scholar.google.com/citations?user=sdSMcuIAAAAJ">Google Scholar</a>
         </p>
-      )}
+        <p>
+          A Master's student at <a href="https://www.scl.kyoto-u.ac.jp/~shimakgr/indexE.html">Advanced Solid State Chemistry Laboratory</a>, <a href="https://www.kuicr.kyoto-u.ac.jp/sites/icr/">Institute for Chemical Research</a>, Kyoto University. Interested in transition metal oxides and thin film.
+          {/* {author?.summary || null} */}
+        </p>
+      </>}
     </div>
   )
 }
