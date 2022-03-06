@@ -77,7 +77,7 @@ html {
 }
 
 body {
-  font-family: var(--font-body);font-weight: 200; /*450*/
+  font-family: var(--font-body);font-weight: 300; /*450*/
   font-size: var(--fontSize-1);
   color: var(--color-text);
 }

@@ -7,7 +7,7 @@ import "@fontsource/merriweather-sans/500-italic.css";
 import "@fontsource/merriweather-sans/600.css";
 import "@fontsource/merriweather-sans/600-italic.css";
 
-import "@ibm/plex/600-italic.css";
+import "@ibm/plex";
 
 // normalize CSS across browsers
 import "./src/normalize.css"
