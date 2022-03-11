@@ -181,6 +181,7 @@ ol li {
   padding-left: var(--spacing-0);
   margin-bottom: calc(var(--spacing-8) / 2);
   line-height: var(--lineHeight-relaxed);
+  list-style-position: outside;
 }
 
 li > p {
