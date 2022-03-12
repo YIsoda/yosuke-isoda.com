@@ -48,6 +48,10 @@ const BlogIndex = ({ data, location }) => {
             <span className="paperAuthor">磯田 洋介</span>, 菅 大介, 島川 祐一, “プロトン伝導性電解質を用いた遷移金属酸化物の電気化学的物性制御 (Electrochemical control of a transition metal oxide by using proton conducting electrolyte)”<br></br>
             2021年第82回応用物理学会秋季学術講演会，2021-09-11 <SimpleUrlText urlString="https://confit.atlas.jp/guide/event/jsap2021a/subject/11a-N203-10/advanced" />
           </li>
+          <li>
+            <span className="paperAuthor">磯田洋介</span>, 菅大介, 小倉弓枝, 間嶋拓也, 土屋敬志, 島川祐一, “プロトン脱挿入による遷移金属酸化物の電気化学的制御”<br />
+            <a href="https://nenkai2022.ceramic.or.jp/">日本セラミックス協会 2022年年会</a>，2022-03-11
+          </li>
         </ol>
 
       </li>
