@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { SimpleUrlText } from "../components/simpleUrlText"
+import { PublicationItem } from "../components/publicationItem"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -32,8 +33,21 @@ const BlogIndex = ({ data, location }) => {
         <h2>Publications (Referred)</h2>
         <ol>
           <li>
-            <span className="paperAuthor">Yosuke Isoda</span>, Daisuke Kan, Yumie Ogura, Takuya Majima, Takashi Tsuchiya, and Yuichi Shimakawa, &ldquo;Electrochemical control and protonation of the strontium iron oxide SrFeOy by using proton-conducting electrolyte&rdquo;, <i>Appl. Phys. Lett.</i> <b>120</b>, 091601 (2022) <SimpleUrlText urlString="https://doi.org/10.1063/5.0083209" /> Published Online: 2022-03-01; freely available for 14 days after the online publication
+            <PublicationItem
+              publicationTitle="Electrochemical control"
+              titleContent={<>Electrochemical control and protonation of the strontium iron oxide SrFeO<sub><i>y</i></sub> by using proton-conducting electrolyte</>}
+              authorsInEnglish={["Yosuke Isoda", "Daisuke Kan", "Yumie Ogura", "Takuya Majima", "Takashi Tsuchiya", "Yuichi Shimakawa"]}
+              journalAbbreviation="Appl. Phys. Lett."
+              volume={120}
+              page={"091601"}
+              year={2022}
+              doi="10.1063/5.0083209"
+              additionalInfo={<>Published Online: 2022-03-01</>}
+            />
           </li>
+          {/* <li>
+            <span className="paperAuthor">Yosuke Isoda</span>, Daisuke Kan, Yumie Ogura, Takuya Majima, Takashi Tsuchiya, and Yuichi Shimakawa, &ldquo;Electrochemical control and protonation of the strontium iron oxide SrFeOy by using proton-conducting electrolyte&rdquo;, <i>Appl. Phys. Lett.</i> <b>120</b>, 091601 (2022) <SimpleUrlText urlString="https://doi.org/10.1063/5.0083209" /> Published Online: 2022-03-01; freely available for 14 days after the online publication
+          </li> */}
         </ol>
         <h2>Presentations </h2>
         <ol>
