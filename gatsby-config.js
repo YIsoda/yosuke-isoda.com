@@ -6,7 +6,7 @@ module.exports = {
       summary: `Advanced Solid State Chemistry Laboratory, Institute for Chemical Research, Kyoto University. Interested in transition metal oxides and thin film`,
     },
     description: `Yosuke Isoda's website`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://yosuke-isoda.com/`,
     social: {
       // twitter: ``,
     },
@@ -113,8 +113,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Yosuke Isoda`,
+        short_name: `Yosuke Isoda`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
