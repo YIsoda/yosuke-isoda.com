@@ -1,0 +1,352 @@
+[
+	{
+		"id": "isodaCeramics2022",
+		"type": "paper-conference",
+		"abstract": "To electrochemically control structural and transport properties of oxygen-deficient perovskite SrFeOy (2.5 < y < 3) (SFO) epitaxial films, we employed electric-field-effect transistor structures in which the proton-conducting solid electrolyte Nafion is used as a gate insulator. When a positive gate voltage is applied, the SFO films are electrochemically reduced, leading to increases in the channel resistance. In addition, we found that the electrochemically reduced SFO films accommodate protons, forming the proton-containing oxide HxSrFeO2.5 whose proton concentration is determined by elastic recoil detection analysis (ERDA) to be x ~ 0.11.",
+		"container-title": "日本セラミックス協会 2022年年会",
+		"event": "日本セラミックス協会",
+		"title": "プロトン脱挿入による遷移金属酸化物の電気化学的制御",
+		"URL": "https://nenkai2022.ceramic.or.jp/",
+		"author": [
+			{
+				"family": "磯田",
+				"given": "洋介"
+			},
+			{
+				"family": "菅",
+				"given": "大介"
+			},
+			{
+				"family": "小倉",
+				"given": "弓枝"
+			},
+			{
+				"family": "間嶋",
+				"given": "拓也"
+			},
+			{
+				"family": "土屋",
+				"given": "敬志"
+			},
+			{
+				"family": "島川",
+				"given": "祐一"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022",
+					3,
+					11
+				]
+			]
+		},
+		"citation-key": "isodaCeramics2022"
+	},
+	{
+		"id": "isodaJSAP2021SpringEn",
+		"type": "paper-conference",
+		"abstract": "The 68th JSAP Spring Meeting 2021,Electric field control of SrFeO&lt;sub&gt;x&lt;/sub&gt; by using proton conducting electrolyte",
+		"container-title": "The 68th JSAP Spring Meeting 2021",
+		"event": "The Japan Society of Applied Physics",
+		"note": "PresentationId: 16p-Z33-9\nPresentationDate: 2021-03-16T15:45:00+09:00",
+		"source": "confit.atlas.jp",
+		"title": "Electric field control of SrFeO<sub>x</sub> by using proton conducting electrolyte",
+		"URL": "https://confit.atlas.jp/guide/event/jsap2021s/subject/16p-Z33-9/detail",
+		"author": [
+			{
+				"family": "Isoda",
+				"given": "Yosuke"
+			},
+			{
+				"family": "Kan",
+				"given": "Daisuke"
+			},
+			{
+				"family": "Shimakawa",
+				"given": "Yuichi"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					3,
+					13
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					3,
+					16
+				]
+			]
+		},
+		"citation-key": "isodaJSAP2021SpringEn"
+	},
+	{
+		"id": "isodaJSAP2021Spring",
+		"type": "paper-conference",
+		"abstract": "2021年第68回応用物理学会春季学術講演会,プロトン伝導性電解質を利用したSrFeO&lt;sub&gt;x&lt;/sub&gt;の電界制御",
+		"container-title": "2021年第68回応用物理学会春季学術講演会",
+		"event": "応用物理学会",
+		"note": "PresentationId: 16p-Z33-9\nPresentationDate: 2021-03-16T15:45:00+09:00",
+		"source": "confit.atlas.jp",
+		"title": "プロトン伝導性電解質を利用したSrFeO<sub>x</sub>の電界制御",
+		"URL": "https://confit.atlas.jp/guide/event/jsap2021s/subject/16p-Z33-9/detail",
+		"author": [
+			{
+				"family": "磯田",
+				"given": "洋介"
+			},
+			{
+				"family": "菅",
+				"given": "大介"
+			},
+			{
+				"family": "島川",
+				"given": "祐一"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					3,
+					13
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					3,
+					16
+				]
+			]
+		},
+		"citation-key": "isodaJSAP2021Spring"
+	},
+	{
+		"id": "isodaJSPMSpring2021",
+		"type": "paper-conference",
+		"abstract": "粉体粉末冶金協会2021年度春季大会（第127回講演大会） ,Nafionゲートを利用したSrFeO&lt;sub&gt;x&lt;/sub&gt;の電界制御",
+		"container-title": "粉体粉末冶金協会2021年度春季大会（第127回講演大会）",
+		"event": "粉体粉末冶金協会",
+		"source": "confit.atlas.jp",
+		"title": "Nafionゲートを利用したSrFeO<sub>x</sub>の電界制御",
+		"URL": "https://confit.atlas.jp/guide/event/jspm2021s/subject/1-VII-02/detail",
+		"author": [
+			{
+				"family": "磯田",
+				"given": "洋介"
+			},
+			{
+				"family": "菅",
+				"given": "大介"
+			},
+			{
+				"family": "島川",
+				"given": "祐一"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					3,
+					21
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					3,
+					18
+				]
+			]
+		},
+		"citation-key": "isodaJSPMSpring2021"
+	},
+	{
+		"id": "isodaJSPMSpring2021En",
+		"type": "paper-conference",
+		"abstract": "Spring Meeting of the Japan Society of Powder and Powder Metallurgy, 2021,Electric field control of SrFeO&lt;sub&gt;x&lt;/sub&gt; by Nafion gating",
+		"container-title": "Spring Meeting of the Japan Society of Powder and Powder Metallurgy, 2021",
+		"event": "Japan Society of Powder and Powder Metallurgy",
+		"source": "confit.atlas.jp",
+		"title": "Electric field control of SrFeO<sub>x</sub> by Nafion gating",
+		"URL": "https://confit.atlas.jp/guide/event/jspm2021s/subject/1-VII-02/detail",
+		"author": [
+			{
+				"family": "Isoda",
+				"given": "Yosuke"
+			},
+			{
+				"family": "Kan",
+				"given": "Daisuke"
+			},
+			{
+				"family": "Shimakawa",
+				"given": "Yuichi"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					3,
+					21
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					3,
+					18
+				]
+			]
+		},
+		"citation-key": "isodaJSPMSpring2021En"
+	},
+	{
+		"id": "isodaCeramics2022En",
+		"type": "paper-conference",
+		"abstract": "To electrochemically control structural and transport properties of oxygen-deficient perovskite SrFeOy (2.5 < y < 3) (SFO) epitaxial films, we employed electric-field-effect transistor structures in which the proton-conducting solid electrolyte Nafion is used as a gate insulator. When a positive gate voltage is applied, the SFO films are electrochemically reduced, leading to increases in the channel resistance. In addition, we found that the electrochemically reduced SFO films accommodate protons, forming the proton-containing oxide HxSrFeO2.5 whose proton concentration is determined by elastic recoil detection analysis (ERDA) to be x ~ 0.11.",
+		"container-title": "The Ceramic Society of Japan Annual Meeting 2022",
+		"event": "The Ceramic Society of Japan",
+		"title": "Electrochemical control of transition metal oxides by protonation and deprotonation",
+		"URL": "https://nenkai2022.ceramic.or.jp/",
+		"author": [
+			{
+				"family": "Isoda",
+				"given": "Yosuke"
+			},
+			{
+				"family": "Kan",
+				"given": "Daisuke"
+			},
+			{
+				"family": "Ogura",
+				"given": "Yumie"
+			},
+			{
+				"family": "Majima",
+				"given": "Takuya"
+			},
+			{
+				"family": "Tsuchiya",
+				"given": "Takashi"
+			},
+			{
+				"family": "Shimakawa",
+				"given": "Yuichi"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022",
+					3,
+					11
+				]
+			]
+		},
+		"citation-key": "isodaCeramics2022En"
+	},
+	{
+		"id": "isodaJSAP2021Autumn",
+		"type": "paper-conference",
+		"abstract": "2021年第82回応用物理学会秋季学術講演会,プロトン伝導性電解質を用いた遷移金属酸化物の電気化学的物性制御",
+		"container-title": "2021年第82回応用物理学会秋季学術講演会",
+		"event": "応用物理学会",
+		"source": "confit.atlas.jp",
+		"title": "プロトン伝導性電解質を用いた遷移金属酸化物の電気化学的物性制御",
+		"URL": "https://confit.atlas.jp/guide/event/jsap2021a/subject/11a-N203-10/detail",
+		"author": [
+			{
+				"family": "磯田",
+				"given": "洋介"
+			},
+			{
+				"family": "菅",
+				"given": "大介"
+			},
+			{
+				"family": "島川",
+				"given": "祐一"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					3,
+					30
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					9,
+					11
+				]
+			]
+		},
+		"citation-key": "isodaJSAP2021Autumn"
+	},
+	{
+		"id": "isodaJSAP2021AutumnEn",
+		"type": "paper-conference",
+		"abstract": "The 82nd JSAP Autumn Meeting 2021,Electrochemical control of a transition metal oxide by using proton conducting electrolyte",
+		"container-title": "The 82nd JSAP Autumn Meeting 2021",
+		"event": "The Japan Society of Applied Physics",
+		"source": "confit.atlas.jp",
+		"title": "Electrochemical control of a transition metal oxide by using proton conducting electrolyte",
+		"URL": "https://confit.atlas.jp/guide/event/jsap2021a/subject/11a-N203-10/detail",
+		"author": [
+			{
+				"family": "Isoda",
+				"given": "Yosuke"
+			},
+			{
+				"family": "Kan",
+				"given": "Daisuke"
+			},
+			{
+				"family": "Shimakawa",
+				"given": "Yuichi"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					3,
+					30
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					9,
+					11
+				]
+			]
+		},
+		"citation-key": "isodaJSAP2021AutumnEn"
+	}
+]

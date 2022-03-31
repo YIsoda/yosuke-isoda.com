@@ -7,9 +7,11 @@ import Seo from "../components/seo"
 import { SimpleUrlText } from "../components/simpleUrlText"
 import { PublicationItem } from "../components/publicationItem"
 
+import { PresentationItems } from "../components/publicationItem";
+
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
+  // const posts = data.allMarkdownRemark.nodes
 
   // if (posts.length === 0) {
   //   return (
@@ -39,7 +41,7 @@ const BlogIndex = ({ data, location }) => {
               authorsInEnglish={["Yosuke Isoda", "Daisuke Kan", "Yumie Ogura", "Takuya Majima", "Takashi Tsuchiya", "Yuichi Shimakawa"]}
               journalAbbreviation="Appl. Phys. Lett."
               volume={120}
-              page={"091601"}
+              page="091601"
               year={2022}
               doi="10.1063/5.0083209"
               additionalInfo={<>Published Online: 2022-03-01</>}
@@ -50,26 +52,15 @@ const BlogIndex = ({ data, location }) => {
           </li> */}
         </ol>
         <h2>Presentations </h2>
-        <ol>
-          <li><span className="paperAuthor">磯田 洋介</span>, 菅 大介, 島川 祐一, “プロトン伝導性電解質を利用したSrFeOxの電界制御 (Electric field control of SrFeOx by using proton conducting electrolyte)” <br />
-            2021年第68回応⽤物理学会春季学術講演会，2021-03-16<br /> <SimpleUrlText urlString="https://confit.atlas.jp/guide/event/jsap2021s/subject/16p-Z33-9/advanced" /></li>
 
-          <li>
-            <span className="paperAuthor">磯田 洋介</span>, 菅 大介, 島川 祐一, “Nafionゲートを利用したSrFeOxの電界制御 (Electric field control of SrFeOx by Nafion gating)”<br></br>粉体粉末冶金協会2021年度春季大会（第127回講演大会） ，2021-06-01 &ndash; 2021-06-03<br />
-            <SimpleUrlText urlString="https://confit.atlas.jp/guide/event/jspm2021s/subject/1-VII-02/advanced" />
-          </li>
-          <li>
-            <span className="paperAuthor">磯田 洋介</span>, 菅 大介, 島川 祐一, “プロトン伝導性電解質を用いた遷移金属酸化物の電気化学的物性制御 (Electrochemical control of a transition metal oxide by using proton conducting electrolyte)”<br></br>
-            2021年第82回応用物理学会秋季学術講演会，2021-09-11 <SimpleUrlText urlString="https://confit.atlas.jp/guide/event/jsap2021a/subject/11a-N203-10/advanced" />
-          </li>
-          <li>
-            <span className="paperAuthor">磯田洋介</span>, 菅大介, 小倉弓枝, 間嶋拓也, 土屋敬志, 島川祐一, “プロトン脱挿入による遷移金属酸化物の電気化学的制御”<br />
-            <a href="https://nenkai2022.ceramic.or.jp/">日本セラミックス協会 2022年年会</a>，2022-03-11
-          </li>
-        </ol>
-
+        <PresentationItems citations={[
+          ["isodaJSAP2021Spring", "isodaJSAP2021SpringEn"],
+          ["isodaJSPMSpring2021", "", { dateRange: ["2021-06-01", "2021-06-03"] }],
+          ["isodaJSAP2021Autumn", "isodaJSAP2021AutumnEn"],
+          ["isodaCeramics2022", "isodaCeramics2022En", { urlType: "topPageOnly" }],
+        ]} />
       </li>
-      <ol style={{ listStyle: `none` }}>
+      {/* <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
@@ -100,7 +91,7 @@ const BlogIndex = ({ data, location }) => {
             </li>
           )
         })}
-      </ol>
+      </ol> */}
     </Layout>
   )
 }
@@ -112,19 +103,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-          description
-        }
       }
     }
   }
