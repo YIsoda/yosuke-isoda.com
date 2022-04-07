@@ -32,7 +32,7 @@ const BlogIndex = ({ data, location }) => {
       <Seo title={"Home"/*"All posts"*/} />
       <Bio />
       <li style={{ listStyle: `none` }}>
-        <h2>Publications (Referred)</h2>
+        <h2>Publications (Refereed)</h2>
         <ol>
           <li>
             <PublicationItem
