@@ -32,7 +32,7 @@ const BlogIndex = ({ data, location }) => {
       <Seo title={"Home"/*"All posts"*/} />
       <Bio />
       <li style={{ listStyle: `none` }}>
-        <h2>Publications (Referred)</h2>
+        <h2>Publications (Refereed)</h2>
         <ol>
           <li>
             <PublicationItem
@@ -44,7 +44,7 @@ const BlogIndex = ({ data, location }) => {
               page="091601"
               year={2022}
               doi="10.1063/5.0083209"
-              additionalInfo={<>Published Online: 2022-03-01</>}
+              additionalInfo={<>Published Online: 2022-03-01<br /><a href="http://hdl.handle.net/2433/269148">View Accepted Manuscript on Kyoto University Research Information Repository</a></>}
             />
           </li>
           {/* <li>

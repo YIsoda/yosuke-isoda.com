@@ -32,8 +32,11 @@ export const PublicationItem: React.VFC<PublicationInfo & { additionalInfo?: Rea
         </div>
         <div>
             <i>{props.journalAbbreviation}</i> <span style={{ fontWeight: "bold" }}>{props.volume}</span>, {props.page} ({props.year})
-            &#x20;<SimpleUrlText urlString={doiUrl(props.doi)} />
-        </div>{props.additionalInfo}
+        </div>
+        <div>
+            <SimpleUrlText urlString={doiUrl(props.doi)} />
+        </div>
+        {props.additionalInfo}
     </>;
 
 const doiUrl: (doi: string) => string = (doi) => `https://doi.org/${doi}`
