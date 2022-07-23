@@ -9051,7 +9051,7 @@ __metadata:
     react: ^17.0.2
     react-dom: ^17.0.2
     react-helmet: ^6.1.0
-    typeface-montserrat: 0.0.75
+    typeface-montserrat: 1.1.13
   languageName: unknown
   linkType: soft
 
@@ -16423,10 +16423,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typeface-montserrat@npm:0.0.75":
-  version: 0.0.75
-  resolution: "typeface-montserrat@npm:0.0.75"
-  checksum: 88ef23245ffb509fdb5a1a1ad8c6438168bb88e2fcbbf9150e3c5dc9de43c6623849cc14afeb4e6c085013ee558defe1269a8db73271a24ccfe5f5e6eeb5c58b
+"typeface-montserrat@npm:1.1.13":
+  version: 1.1.13
+  resolution: "typeface-montserrat@npm:1.1.13"
+  checksum: f4efa1308731dc75b2e04aa9e61e9b0ca359be412742d5ccac5823ed13a6651a605caebb2a2fab5e7b3ee8ad77276e53d0e468d44250f9644f0556965cccfff5
   languageName: node
   linkType: hard
 
