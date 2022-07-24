@@ -26,9 +26,11 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        © 2022 { siteMetadata.author.name }. Built with
+        © 2022 {siteMetadata.author.name}. Built with
         {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <a href="https://www.gatsbyjs.com">
+          Gatsby
+        </a>. View history on <a href="https://github.com/YIsoda/yosuke-isoda.com">GitHub</a>
       </footer>
     </div>
   )
