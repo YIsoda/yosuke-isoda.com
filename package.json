@@ -10,6 +10,7 @@
   "dependencies": {
     "@fontsource/merriweather-sans": "4.5.8",
     "@ibm/plex": "^6.0.2",
+    "bootstrap-icons": "^1.9.1",
     "gatsby": "^4.19.2",
     "gatsby-plugin-feed": "^4.19.0",
     "gatsby-plugin-gatsby-cloud": "^4.19.0",

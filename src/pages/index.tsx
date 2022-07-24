@@ -8,6 +8,7 @@ import { SimpleUrlText } from "../components/simpleUrlText"
 import { PublicationItem } from "../components/publicationItem"
 
 import { PresentationItems } from "../components/publicationItem";
+import "bootstrap-icons/font/bootstrap-icons.css"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -27,6 +28,7 @@ const BlogIndex = ({ data, location }) => {
   //   )
   // }
 
+  const FiletypePdfIcon = () => <span className="bi bi-filetype-pdf" style={{ color: "red" }} />;
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title={"Home"/*"All posts"*/} />
@@ -44,7 +46,13 @@ const BlogIndex = ({ data, location }) => {
               page="091601"
               year={2022}
               doi="10.1063/5.0083209"
-              additionalInfo={<>Published Online: 2022-03-01<br /><a href="http://hdl.handle.net/2433/269148">View Accepted Manuscript on Kyoto University Research Information Repository</a></>}
+              additionalInfo={
+                <>Published Online: 2022-03-01<br />
+                  <a href="http://hdl.handle.net/2433/269148">
+                    Accepted Manuscript</a>
+                  {" ("}<a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/269148/1/5.0083209_AM.pdf">
+                    <FiletypePdfIcon />PDF Link</a>{")"}
+                </>}
             />
           </li>
           {/* <li>
@@ -99,11 +107,11 @@ const BlogIndex = ({ data, location }) => {
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query {
-    site {
+    query {
+      site {
       siteMetadata {
-        title
-      }
+      title
+    }
     }
   }
-`
+    `

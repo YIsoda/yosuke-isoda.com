@@ -5449,6 +5449,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bootstrap-icons@npm:^1.9.1":
+  version: 1.9.1
+  resolution: "bootstrap-icons@npm:1.9.1"
+  checksum: b388264719b5d2526809df509b83aa7e696d467f3b976d79faefb6fc7f07cee5427a894331af90b00b1ceb8d28a99fc398f1ca0553afaa53eb77a7749bb73ea5
+  languageName: node
+  linkType: hard
+
 "boxen@npm:^4.2.0":
   version: 4.2.0
   resolution: "boxen@npm:4.2.0"
@@ -9029,6 +9036,7 @@ __metadata:
   dependencies:
     "@fontsource/merriweather-sans": 4.5.8
     "@ibm/plex": ^6.0.2
+    bootstrap-icons: ^1.9.1
     gatsby: ^4.19.2
     gatsby-plugin-feed: ^4.19.0
     gatsby-plugin-gatsby-cloud: ^4.19.0
