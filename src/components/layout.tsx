@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { siteMetadata } from "../../gatsby-config"
+import { LogoGithubIcon } from "@primer/octicons-react";
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -31,7 +32,9 @@ const Layout = ({ location, title, children }) => {
         {` `}
         <a href="https://www.gatsbyjs.com">
           Gatsby
-        </a>. View history on <a href="https://github.com/YIsoda/yosuke-isoda.com">GitHub</a>
+        </a>. View history on <a href="https://github.com/YIsoda/yosuke-isoda.com">
+          <LogoGithubIcon verticalAlign="text-bottom" size={22}/>
+        </a>
       </footer>
     </div>
   )

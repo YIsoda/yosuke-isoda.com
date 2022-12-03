@@ -3851,6 +3851,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@primer/octicons-react@npm:^17.9.0":
+  version: 17.9.0
+  resolution: "@primer/octicons-react@npm:17.9.0"
+  peerDependencies:
+    react: ">=15"
+  checksum: f893390a6897f384b264a5b50b23b5de235eb1f72b8efb3122023b89fd3ec7dc92c66f7a23f971662ab00684a3a988a88d2a576e73310a5d1bd0d48662a56332
+  languageName: node
+  linkType: hard
+
 "@sideway/address@npm:^4.1.3":
   version: 4.1.3
   resolution: "@sideway/address@npm:4.1.3"
@@ -9036,6 +9045,7 @@ __metadata:
   dependencies:
     "@fontsource/merriweather-sans": 4.5.8
     "@ibm/plex": ^6.0.2
+    "@primer/octicons-react": ^17.9.0
     bootstrap-icons: ^1.9.1
     gatsby: ^4.19.2
     gatsby-plugin-feed: ^4.19.0
