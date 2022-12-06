@@ -1,6 +1,6 @@
 # yosuke-isoda.com
 
-My website: <a href="https://yosuke-isoda.com">yosuke-isoda.com</a>
+My website: <https://yosuke-isoda.com>
 
 Below is the original readme.
 
