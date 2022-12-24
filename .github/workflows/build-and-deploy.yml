@@ -13,8 +13,6 @@ jobs:
         uses: actions/setup-node@v3.5.1
         with:
           node-version: 18
-      - name: Enable latest yarn
-        run: yarn set version latest
       - name: Install dependencies
         run: yarn install
       - name: Build Gatsby
