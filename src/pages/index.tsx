@@ -38,7 +38,18 @@ const BlogIndex = ({ data, location }) => {
         <ol>
           <li>
             <PublicationItem
-              publicationTitle="Electrochemical control"
+              titleContent={<>Orientation-dependent electrochemical reduction and proton evolution in the oxygen-deficient perovskite SrFeO<sub>2.5+<i>y</i></sub></>}
+              authorsInEnglish={["Yosuke Isoda", "Daisuke Kan", "Takuya Majima", "Yuichi Shimakawa"]}
+              journalAbbreviation="Appl. Phys. Express"
+              volume=""
+              page=""
+              year=""
+              doi="10.35848/1882-0786/acac60"
+              additionalInfo={"Accepted on 2022-12-16"}
+            />
+          </li>
+          <li>
+            <PublicationItem
               titleContent={<>Electrochemical control and protonation of the strontium iron oxide SrFeO<sub><i>y</i></sub> by using proton-conducting electrolyte</>}
               authorsInEnglish={["Yosuke Isoda", "Daisuke Kan", "Yumie Ogura", "Takuya Majima", "Takashi Tsuchiya", "Yuichi Shimakawa"]}
               journalAbbreviation="Appl. Phys. Lett."

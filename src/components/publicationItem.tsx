@@ -5,13 +5,12 @@ type AuthorType = "Me" | "Collesponding";
 type AuthorName = string | { firstName: string, familyName: string };
 
 type PublicationInfo = {
-    publicationTitle: string;
     titleContent: React.ReactNode;
     authorsInEnglish: (AuthorName | { authorName: AuthorName, authorType: AuthorType })[];
     journalAbbreviation: string;
     volume: number | string;
     page: number | string;
-    year: number;
+    year: number | string;
     doi: string
 };
 
@@ -31,7 +30,7 @@ export const PublicationItem: React.VFC<PublicationInfo & { additionalInfo?: Rea
             }
         </div>
         <div>
-            <i>{props.journalAbbreviation}</i> <span style={{ fontWeight: "bold" }}>{props.volume}</span>, {props.page} ({props.year})
+            <i>{props.journalAbbreviation}</i> <span style={{ fontWeight: "bold" }}>{props.volume}</span>{props.page==""?"":", "}{props.page} {props.year==""?"":"("+props.year+")"}
         </div>
         <div>
             <SimpleUrlText urlString={doiUrl(props.doi)} />
