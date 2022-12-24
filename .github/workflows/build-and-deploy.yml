@@ -1,0 +1,30 @@
+on: [push]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    name: Build Gatsby and deploy to Cloudflare Pages
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.5.1
+        with:
+          node-version: 18
+      - name: Enable latest yarn
+        run: yarn set version latest
+      - name: Install dependencies
+        run: yarn install
+      - name: Build Gatsby
+        run: yarn build
+      - name: Publish
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: yosuke-isoda-com
+          directory: public
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
