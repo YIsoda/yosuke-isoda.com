@@ -58,5 +58,5 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "yarn@3.3.1"
 }
