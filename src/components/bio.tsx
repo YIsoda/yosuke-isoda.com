@@ -49,7 +49,7 @@ const Bio = () => {
         </p>
         <p>Mail: isoda.yosuke.84z{"["}at]st.kyoto-u.ac.jp</p>
         <p>
-          A PhD student at <a href="https://www.scl.kyoto-u.ac.jp/~shimakgr/indexE.html">Advanced Solid State Chemistry Laboratory</a>, <a href="https://www.kuicr.kyoto-u.ac.jp/sites/icr/">Institute for Chemical Research</a>, Kyoto University.
+          PhD student at <a href="https://www.scl.kyoto-u.ac.jp/~shimakgr/indexE.html">Advanced Solid State Chemistry Laboratory</a>, <a href="https://www.kuicr.kyoto-u.ac.jp/sites/icr/">Institute for Chemical Research</a>, Kyoto University.
         </p>
         <p>Master of Science in Kyoto University</p>
         <p>Interested in transition metal oxides and thin film.</p>
