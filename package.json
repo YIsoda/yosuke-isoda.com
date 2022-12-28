@@ -8,8 +8,12 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@fontsource/merriweather-sans": "4.5.10",
     "@ibm/plex": "^6.1.1",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.1",
     "@primer/octicons-react": "^17.10.0",
     "bootstrap-icons": "^1.10.2",
     "gatsby": "^5.3.3",
@@ -33,6 +37,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-icons": "^4.7.1",
     "typeface-montserrat": "1.1.13"
   },
   "devDependencies": {

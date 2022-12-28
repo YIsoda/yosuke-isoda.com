@@ -9,6 +9,11 @@ import { PublicationItem } from "../components/publicationItem"
 
 import { PresentationItems } from "../components/publicationItem";
 import "bootstrap-icons/font/bootstrap-icons.css"
+import { BiLinkExternal } from "react-icons/bi";
+import { Button, Stack } from "@mui/material"
+import ButtonGroup from "@mui/material/ButtonGroup"
+import { lineHeight } from "@mui/system"
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -28,7 +33,7 @@ const BlogIndex = ({ data, location }) => {
   //   )
   // }
 
-  const FiletypePdfIcon = () => <span className="bi bi-filetype-pdf" style={{ color: "red" }} />;
+  const FiletypePdfIcon = () => <span className="bi bi-filetype-pdf" style={{ color: "red", lineHeight: "0.0" }} />;
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title={"Home"/*"All posts"*/} />
@@ -59,16 +64,23 @@ const BlogIndex = ({ data, location }) => {
               doi="10.1063/5.0083209"
               additionalInfo={
                 <>Published Online: 2022-03-01<br />
-                  <a href="http://hdl.handle.net/2433/269148">
-                    Accepted Manuscript</a>
-                  {" ("}<a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/269148/1/5.0083209_AM.pdf">
-                    <FiletypePdfIcon />PDF Link</a>{")"}
+                  <ButtonGroup>
+                    <Button variant="contained" size="small"
+                      href="https://aip.scitation.org/doi/10.1063/5.0083209" startIcon={<OpenInNewIcon />} sx={{ textTransform: "none", fontFamily: "inherit" }}>
+                      View on aip.citation.org
+                    </Button>
+                  </ButtonGroup>
+                  <ButtonGroup>
+                    <Button variant="outlined" size="small"
+                      href="http://hdl.handle.net/2433/269148" startIcon={<OpenInNewIcon />} sx={{ textTransform: "none", fontFamily: "inherit" }} >Accepted Manuscript</Button>
+                    <Button variant="outlined" size="small"
+                      href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/269148/1/5.0083209_AM.pdf" startIcon={<FiletypePdfIcon />} sx={{ textTransform: "none", fontFamily: "inherit" }}>
+                      PDF
+                    </Button>
+                  </ButtonGroup>
                 </>}
             />
           </li>
-          {/* <li>
-            <span className="paperAuthor">Yosuke Isoda</span>, Daisuke Kan, Yumie Ogura, Takuya Majima, Takashi Tsuchiya, and Yuichi Shimakawa, &ldquo;Electrochemical control and protonation of the strontium iron oxide SrFeOy by using proton-conducting electrolyte&rdquo;, <i>Appl. Phys. Lett.</i> <b>120</b>, 091601 (2022) <SimpleUrlText urlString="https://doi.org/10.1063/5.0083209" /> Published Online: 2022-03-01; freely available for 14 days after the online publication
-          </li> */}
         </ol>
         <h2>Presentations </h2>
 
