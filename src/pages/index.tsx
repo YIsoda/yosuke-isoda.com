@@ -9,8 +9,7 @@ import { PublicationItem } from "../components/publicationItem"
 
 import { PresentationItems } from "../components/publicationItem";
 import "bootstrap-icons/font/bootstrap-icons.css"
-import { BiLinkExternal } from "react-icons/bi";
-import { Button, Stack } from "@mui/material"
+import { Button, Card, CardContent } from "@mui/material"
 import ButtonGroup from "@mui/material/ButtonGroup"
 import { lineHeight } from "@mui/system"
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
@@ -66,15 +65,15 @@ const BlogIndex = ({ data, location }) => {
                 <>Published Online: 2022-03-01<br />
                   <ButtonGroup>
                     <Button variant="contained" size="small"
-                      href="https://aip.scitation.org/doi/10.1063/5.0083209" startIcon={<OpenInNewIcon />} sx={{ textTransform: "none", fontFamily: "inherit" }}>
+                      href="https://aip.scitation.org/doi/10.1063/5.0083209" startIcon={<OpenInNewIcon />} >
                       View on aip.citation.org
                     </Button>
                   </ButtonGroup>
                   <ButtonGroup>
                     <Button variant="outlined" size="small"
-                      href="http://hdl.handle.net/2433/269148" startIcon={<OpenInNewIcon />} sx={{ textTransform: "none", fontFamily: "inherit" }} >Accepted Manuscript</Button>
+                      href="http://hdl.handle.net/2433/269148" startIcon={<OpenInNewIcon />} >Accepted Manuscript</Button>
                     <Button variant="outlined" size="small"
-                      href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/269148/1/5.0083209_AM.pdf" startIcon={<FiletypePdfIcon />} sx={{ textTransform: "none", fontFamily: "inherit" }}>
+                      href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/269148/1/5.0083209_AM.pdf" startIcon={<FiletypePdfIcon />} >
                       PDF
                     </Button>
                   </ButtonGroup>
