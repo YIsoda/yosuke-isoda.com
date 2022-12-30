@@ -1,5 +1,7 @@
 # yosuke-isoda.com
 
+[![Build and Deploy status badge](https://github.com/YIsoda/yosuke-isoda.com/actions/workflows/build-and-deploy.yml/badge.svg?event=push)](https://github.com/YIsoda/yosuke-isoda.com/actions/workflows/build-and-deploy.yml)
+
 My website: <https://yosuke-isoda.com>
 
 Below is the original readme.
