@@ -8,6 +8,8 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { Button, Divider } from "@mui/material";
+import { OpenInNew } from "@mui/icons-material";
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -43,9 +45,15 @@ const Bio = () => {
       /> */}
       {<>
         <p className="social-links">
-          <a href="https://orcid.org/0000-0003-4445-9908">
-            <img alt="ORCID logo" src="ORCIDiD_iconvector.svg" width="16" height="16" />
-            0000-0003-4445-9908</a> | <a href="https://scholar.google.com/citations?user=sdSMcuIAAAAJ">Google Scholar</a>
+          <Button href="https://orcid.org/0000-0003-4445-9908" target="_blank" rel="noopener noreferrer" startIcon={<OpenInNew />}>
+            <img alt="ORCID logo" src="ORCIDiD_iconvector.svg" width="16" height="16" />0000-0003-4445-9908
+          </Button> |
+          <Button href="https://scholar.google.com/citations?user=sdSMcuIAAAAJ" target="_blank" rel="noopener noreferrer" startIcon={<OpenInNew />}>
+            Google Scholar
+          </Button> |
+          <Button href="https://www.webofscience.com/wos/author/record/AGR-5721-2022" target="_blank" rel="noopener noreferrer" startIcon={<OpenInNew />}>
+            ResearcherID
+          </Button>
         </p>
         <p>Mail: isoda.yosuke.84z{"["}at]st.kyoto-u.ac.jp</p>
         <p>
