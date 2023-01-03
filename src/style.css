@@ -308,6 +308,7 @@ a:focus {
 .social-links a {
   color: #000000;
   text-decoration-line: none;
+  font-weight: var(--fontWeight-semibold);
   /* margin: ; */
 }
 

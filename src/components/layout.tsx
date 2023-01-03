@@ -28,7 +28,8 @@ const Layout = ({ location, title, children }) => {
     typography: {
       fontFamily: "inherit",
       button: {
-        textTransform: "none"
+        textTransform: "none",
+        userSelect:"inherit"
       },
     },
   });
