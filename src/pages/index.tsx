@@ -45,11 +45,23 @@ const BlogIndex = ({ data, location }) => {
               titleContent={<>Orientation-dependent electrochemical reduction and proton evolution in the oxygen-deficient perovskite SrFeO<sub>2.5+<i>y</i></sub></>}
               authorsInEnglish={["Yosuke Isoda", "Daisuke Kan", "Takuya Majima", "Yuichi Shimakawa"]}
               journalAbbreviation="Appl. Phys. Express"
-              volume=""
-              page=""
-              year=""
+              volume="16"
+              page="015506"
+              year="2023"
               doi="10.35848/1882-0786/acac60"
-              additionalInfo={"Accepted on 2022-12-16"}
+              additionalInfo={<>Published: 2023-01-04<br />
+                Selected as <a href="https://iopscience.iop.org/journal/1882-0786/page/Spotlights" >APEX Spotlights</a><br />
+                <ButtonGroup>
+                  <Button variant="contained" size="small"
+                    href="https://iopscience.iop.org/article/10.35848/1882-0786/acac60" startIcon={<OpenInNewIcon />}>
+                    View Free Article on IOPscience
+                  </Button>
+                  <Button variant="outlined" size="small"
+                    href="https://iopscience.iop.org/article/10.35848/1882-0786/acac60/pdf" startIcon={<FiletypePdfIcon />}>
+                    PDF
+                  </Button>
+                </ButtonGroup>
+              </>}
             />
           </li>
           <li>
