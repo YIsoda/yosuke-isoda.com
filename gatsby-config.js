@@ -8,7 +8,7 @@ module.exports = {
     description: `Yosuke Isoda's website`,
     siteUrl: `https://yosuke-isoda.com/`,
     social: {
-      // twitter: ``,
+      twitter: `yosuke_isoda`,
     },
   },
   plugins: [
