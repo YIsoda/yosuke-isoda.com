@@ -83,7 +83,7 @@ const BlogIndex = ({ data, location }) => {
                   </ButtonGroup>
                   <ButtonGroup>
                     <Button variant="outlined" size="small"
-                      href="http://hdl.handle.net/2433/269148" startIcon={<OpenInNewIcon />} >Accepted Manuscript</Button>
+                      href="http://hdl.handle.net/2433/269148" startIcon={<OpenInNewIcon />} >Self-archive</Button>
                     <Button variant="outlined" size="small"
                       href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/269148/1/5.0083209_AM.pdf" startIcon={<FiletypePdfIcon />} >
                       PDF
