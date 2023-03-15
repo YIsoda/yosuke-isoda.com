@@ -30,7 +30,7 @@ export const PublicationItem: React.VFC<PublicationInfo & { additionalInfo?: Rea
             }
         </div>
         <div>
-            <i>{props.journalAbbreviation}</i> <span style={{ fontWeight: "bold" }}>{props.volume}</span>{props.page==""?"":", "}{props.page} {props.year==""?"":"("+props.year+")"}
+            <i>{props.journalAbbreviation}</i> <span style={{ fontWeight: "bold" }}>{props.volume}</span>{props.page == "" ? "" : ", "}{props.page} {props.year == "" ? "" : "(" + props.year + ")"}
         </div>
         <div>
             <SimpleUrlText urlString={doiUrl(props.doi)} />
@@ -42,9 +42,10 @@ const doiUrl: (doi: string) => string = (doi) => `https://doi.org/${doi}`
 
 import { PresentationInfo } from "../../content/publications/presentationInfo";
 
-export const PresentationItem: React.VFC<PresentationInfo & { urlType: UrlType } & { dateRange?: [Date, Date] } & { additionalInfo?: React.ReactNode }> = (props) =>
+export const PresentationItem: React.FC<PresentationInfo & { urlType: UrlType } & { dateRange?: [Date, Date] } & { additionalInfo?: React.ReactNode }> = (props) =>
     <>
-        <div dangerouslySetInnerHTML={{ __html: props.titleContent }} style={{ fontWeight: "bold" }}></div>
+        {props.additionalInfo}
+        <span dangerouslySetInnerHTML={{ __html: props.titleContent }} style={{ fontWeight: "bold" }}></span>
         <div>
             {
                 props.author.reduce((previousValue: JSX.Element, currentValue, currentIndex) => {
@@ -63,7 +64,6 @@ export const PresentationItem: React.VFC<PresentationInfo & { urlType: UrlType }
                 : props.date.toLocaleString("ja-JP", { dateStyle: "short" })}
         </div>
         <div>{props.urlType == "indivisualPage" ? <SimpleUrlText urlString={props.url} /> : <></>}</div>
-        {props.additionalInfo}
     </>;
 
 
@@ -71,9 +71,13 @@ import { PresentationInfos } from "../../content/publications/publications-list"
 
 type UrlType = "indivisualPage" | "topPageOnly";
 
-export const PresentationItems: React.VFC<
+export const PresentationItems: React.FC<
     {
-        citations: [jaKey: string, enKey: string, additionalInfo?: { dateRange?: [string, string]; urlType?: UrlType }][]
+        citations: [
+            jaKey: string,
+            enKey: string,
+            additionalInfo?: { dateRange?: [string, string]; urlType?: UrlType, additionalElement: React.ReactNode }
+        ][]
     }
 > = (props) => {
     return <ol>
@@ -94,6 +98,7 @@ export const PresentationItems: React.VFC<
                                 : undefined
                         }
                         urlType={addintionalInfo?.urlType ?? "indivisualPage"}
+                        additionalInfo={addintionalInfo?.additionalElement}
                     />
                 </li>
             }
