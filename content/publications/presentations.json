@@ -1,5 +1,42 @@
 [
 	{
+		"id": "isodaJSAP2023Spring",
+		"container-title":"2023年第70回応用物理学会春季学術講演会",
+		"author": [
+			{
+				"family": "磯田",
+				"given": "洋介"
+			},
+			{
+				"family": "菅",
+				"given": "大介"
+			},
+			{
+				"family": "間嶋",
+				"given": "拓也"
+			},
+			{
+				"family": "島川",
+				"given": "祐一"
+			}
+		],
+		"citation-key": "isodaJSAP2023Spring",
+		"event-title": "応用物理学会",
+		"issued": {
+			"date-parts": [
+				[
+					2023,
+					3,
+					15
+				]
+			]
+		},
+		"source": "confit.atlas.jp",
+		"title": "結晶方位に依存した遷移金属酸化物SrFeO<sub><i>x</i></sub>への電気化学的プロトン注入",
+		"type": "paper-conference",
+		"URL": "https://confit.atlas.jp/guide/event/jsap2023s/subject/15a-A409-6/detail"
+	},
+	{
 		"id": "isodaCeramics2022",
 		"type": "paper-conference",
 		"abstract": "To electrochemically control structural and transport properties of oxygen-deficient perovskite SrFeOy (2.5 < y < 3) (SFO) epitaxial films, we employed electric-field-effect transistor structures in which the proton-conducting solid electrolyte Nafion is used as a gate insulator. When a positive gate voltage is applied, the SFO films are electrochemically reduced, leading to increases in the channel resistance. In addition, we found that the electrochemically reduced SFO films accommodate protons, forming the proton-containing oxide HxSrFeO2.5 whose proton concentration is determined by elastic recoil detection analysis (ERDA) to be x ~ 0.11.",

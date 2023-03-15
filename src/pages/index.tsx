@@ -9,7 +9,7 @@ import { PublicationItem } from "../components/publicationItem"
 
 import { PresentationItems } from "../components/publicationItem";
 import "bootstrap-icons/font/bootstrap-icons.css"
-import { Button, Card, CardContent } from "@mui/material"
+import { Button, Card, CardContent, Chip } from "@mui/material"
 import ButtonGroup from "@mui/material/ButtonGroup"
 import { lineHeight } from "@mui/system"
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
@@ -100,6 +100,7 @@ const BlogIndex = ({ data, location }) => {
           ["isodaJSPMSpring2021", "", { dateRange: ["2021-06-01", "2021-06-03"] }],
           ["isodaJSAP2021Autumn", "isodaJSAP2021AutumnEn"],
           ["isodaCeramics2022", "isodaCeramics2022En", { urlType: "topPageOnly" }],
+          ["isodaJSAP2023Spring", "",{additionalElement:<Chip color="success" label="New!" size="small"/>}],
         ]} />
       </li>
       {/* <ol style={{ listStyle: `none` }}>
