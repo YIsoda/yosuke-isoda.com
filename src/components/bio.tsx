@@ -8,8 +8,8 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import { Button, Divider } from "@mui/material";
-import { OpenInNew, Twitter } from "@mui/icons-material";
+import { Button, IconButton } from "@mui/material";
+import { Twitter } from "@mui/icons-material";
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -45,17 +45,24 @@ const Bio = () => {
       /> */}
       {<>
         <p className="social-links">
-          <Button href="https://orcid.org/0000-0003-4445-9908" target="_blank" rel="noopener noreferrer" startIcon={<OpenInNew />}>
-            <img alt="ORCID logo" src="ORCIDiD_iconvector.svg" width="16" height="16" />0000-0003-4445-9908
+          <Button href="https://orcid.org/0000-0003-4445-9908" target="_blank" rel="noopener noreferrer" startIcon={<img alt="ORCID logo" src="ORCIDiD_iconvector.svg" width="16" height="16" />}>
+            0000-0003-4445-9908
           </Button>
-          <Button href="https://scholar.google.com/citations?user=sdSMcuIAAAAJ" target="_blank" rel="noopener noreferrer" startIcon={<OpenInNew />}>
+          <Button href="https://scholar.google.com/citations?user=sdSMcuIAAAAJ" target="_blank" rel="noopener noreferrer" startIcon={<img src="Google_Scholar_logo.svg" alt="Google Scholar icon" width={16} />}>
             Google Scholar
           </Button>
-          <Button href="https://www.webofscience.com/wos/author/record/AGR-5721-2022" target="_blank" rel="noopener noreferrer" startIcon={<OpenInNew />}>
+          <Button href="https://www.webofscience.com/wos/author/record/AGR-5721-2022" target="_blank" rel="noopener noreferrer" startIcon={<img src="WoS.svg" alt="Web of Science ResearcherID Icon" width={16} />}>
             ResearcherID
           </Button>
-          <Button href="https://twitter.com/yosuke_isoda" sx={{ minWidth: "0" }}><Twitter sx={{ color: "#1DA1F2" }} href="https://twitter.com/yosuke_isoda" /></Button>
-
+          <Button href="https://researchmap.jp/yosuke-isoda" target="_blank" rel="noopener noreferrer">
+            <img title='researchmap' alt='researchmap' src='https://researchmap.jp/outline/img/researchmap220.gif' height={24} />
+          </Button>
+          <IconButton href="https://twitter.com/yosuke_isoda" sx={{ minWidth: "0" }} target="_blank" rel="noopener noreferrer">
+            <Twitter sx={{ color: "#1DA1F2" }} href="https://twitter.com/yosuke_isoda" />
+          </IconButton>
+          <IconButton href="https://www.linkedin.com/in/yosuke-isoda" target="_blank" rel="noopener noreferrer">
+            <img alt="LinkedIn Icon" src="In-Blue-Logo.png" height={24} />
+          </IconButton>
         </p>
         <p>Mail: isoda.yosuke.84z{"["}at]st.kyoto-u.ac.jp</p>
         <p>
