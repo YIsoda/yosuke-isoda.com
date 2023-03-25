@@ -32,6 +32,11 @@ const Layout = ({ location, title, children }) => {
         userSelect:"inherit"
       },
     },
+    palette:{
+      primary:{
+        main:"#005b99",
+      }
+    }
   });
 
   return (
