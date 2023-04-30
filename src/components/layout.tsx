@@ -45,6 +45,8 @@ const Layout = ({ location, title, children }) => {
         <header className="global-header">{header}</header>
         <main>{children}</main>
         <footer>
+          <p>This work was partly supported by JST, the establishment of university fellowships towards
+the creation of science technology innovation, Grant Number JPMJFS2123.</p>
           © 2022 {siteMetadata.author.name}. Built with
           {` `}
           <a href="https://www.gatsbyjs.com">
