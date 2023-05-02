@@ -77,8 +77,8 @@ const BlogIndex = ({ data, location }) => {
                 <>Published Online: 2022-03-01<br />
                   <ButtonGroup>
                     <Button variant="contained" size="small"
-                      href="https://aip.scitation.org/doi/10.1063/5.0083209" startIcon={<OpenInNewIcon />} >
-                      View on aip.citation.org
+                      href="https://pubs.aip.org/aip/apl/article/120/9/091601/2833026" startIcon={<OpenInNewIcon />} >
+                      View on pubs.aip.org
                     </Button>
                   </ButtonGroup>
                   <ButtonGroup>
