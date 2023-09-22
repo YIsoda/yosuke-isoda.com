@@ -1,4 +1,42 @@
-[
+[	{
+		"id": "isodaJSAP2023Autumn",
+		"container-title":"2023年第84回応用物理学会秋季学術講演会",
+		"author":[
+			{
+				"family": "磯田",
+				"given": "洋介"
+			},
+			{
+				"family": "菅",
+				"given": "大介"
+			},
+			{
+				"family": "中溝",
+				"given": "珠里"
+			},
+			{
+				"family": "間嶋",
+				"given": "拓也"
+			},
+			{
+				"family": "島川",
+				"given": "祐一"
+			}
+		],
+		"citation-key": "isodaJSAP2023Autumn",
+		"issued":{
+			"date-parts":[
+				[
+					2023,
+					9,
+					21
+				]
+			]
+		},
+		"title": "プロトン脱挿入によるSr(Fe,Co)O<sub>3−<i>δ</i></sub>の電気化学的物性制御",
+		"type": "paper-conference",
+		"URL": "https://pub.confit.atlas.jp/ja/event/jsap2023a/presentation/21p-A307-13"
+	},
 	{
 		"id": "isodaJSAP2023Spring",
 		"container-title":"2023年第70回応用物理学会春季学術講演会",
