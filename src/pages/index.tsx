@@ -96,11 +96,12 @@ const BlogIndex = ({ data, location }) => {
         <h2>Presentations </h2>
 
         <PresentationItems citations={[
-          ["isodaJSAP2021Spring", "isodaJSAP2021SpringEn"],
-          ["isodaJSPMSpring2021", "", { dateRange: ["2021-06-01", "2021-06-03"] }],
-          ["isodaJSAP2021Autumn", "isodaJSAP2021AutumnEn"],
+          ["isodaJSAP2023Autumn","",{ additionalElement: <Chip color="success" label="New!" size="small" /> }],
+          ["isodaJSAP2023Spring", ""],
           ["isodaCeramics2022", "isodaCeramics2022En", { urlType: "topPageOnly" }],
-          ["isodaJSAP2023Spring", "",{additionalElement:<Chip color="success" label="New!" size="small"/>}],
+          ["isodaJSAP2021Autumn", "isodaJSAP2021AutumnEn"],
+          ["isodaJSPMSpring2021", "", { dateRange: ["2021-06-01", "2021-06-03"] }],
+          ["isodaJSAP2021Spring", "isodaJSAP2021SpringEn"],
         ]} />
       </li>
       {/* <ol style={{ listStyle: `none` }}>
