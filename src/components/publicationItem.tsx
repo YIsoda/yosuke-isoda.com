@@ -14,7 +14,7 @@ type PublicationInfo = {
     doi: string
 };
 
-export const PublicationItem: React.VFC<PublicationInfo & { additionalInfo?: React.ReactNode }> = (props) =>
+export const PublicationItem: React.FC<PublicationInfo & { additionalInfo?: React.ReactNode }> = (props) =>
     <>
         <div style={{ fontWeight: "bold" }}>{props.titleContent}</div>
         <div>
