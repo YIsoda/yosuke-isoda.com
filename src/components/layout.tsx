@@ -2,8 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { siteMetadata } from "../../gatsby-config"
 import { LogoGithubIcon } from "@primer/octicons-react";
-import { createTheme, ThemeProvider } from "@mui/material";
-import { Theme } from "@mui/system";
+import { createTheme, Theme, ThemeProvider } from "@mui/material";
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
