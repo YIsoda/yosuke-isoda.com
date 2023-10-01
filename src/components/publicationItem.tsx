@@ -14,7 +14,7 @@ type PublicationInfo = {
     doi: string
 };
 
-export const PublicationItem: React.VFC<PublicationInfo & { additionalInfo?: React.ReactNode }> = (props) =>
+export const PublicationItem: React.FC<PublicationInfo & { additionalInfo?: React.ReactNode }> = (props) =>
     <>
         <div style={{ fontWeight: "bold" }}>{props.titleContent}</div>
         <div>
@@ -76,7 +76,7 @@ export const PresentationItems: React.FC<
         citations: [
             jaKey: string,
             enKey: string,
-            additionalInfo?: { dateRange?: [string, string]; urlType?: UrlType, additionalElement: React.ReactNode }
+            additionalInfo?: { dateRange?: [string, string]; urlType?: UrlType, additionalElement?: React.ReactNode }
         ][]
     }
 > = (props) => {
@@ -87,6 +87,7 @@ export const PresentationItems: React.FC<
 
                 const key = jaKey;
                 const info = PresentationInfos.find(elem => elem.citationKey === jaKey);
+                if (info == undefined) throw new Error("Cication key not found.");
                 return <li>
                     <PresentationItem
                         author={info.author}
@@ -99,6 +100,7 @@ export const PresentationItems: React.FC<
                         }
                         urlType={addintionalInfo?.urlType ?? "indivisualPage"}
                         additionalInfo={addintionalInfo?.additionalElement}
+                        doi={undefined}
                     />
                 </li>
             }
