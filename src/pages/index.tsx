@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { HeadFC, Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -35,7 +35,6 @@ const BlogIndex = ({ data, location }) => {
   const FiletypePdfIcon = () => <span className="bi bi-filetype-pdf" style={{ color: "red", lineHeight: "0.0" }} />;
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title={"Home"/*"All posts"*/} />
       <Bio />
       <li style={{ listStyle: `none` }}>
         <h2>Publications (Refereed)</h2>
@@ -141,6 +140,15 @@ const BlogIndex = ({ data, location }) => {
 }
 
 export default BlogIndex
+
+
+
+/**
+ * Head export to define metadata for the page
+ *
+ * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
+ */
+export const Head:HeadFC = () => <Seo title={"Home"} />
 
 export const pageQuery = graphql`
     query {
