@@ -12,15 +12,16 @@
     "@emotion/styled": "^11.11.0",
     "@fontsource/merriweather-sans": "5.0.8",
     "@ibm/plex": "^6.3.0",
-    "@mui/icons-material": "^5.14.7",
-    "@mui/material": "^5.14.7",
-    "@primer/octicons-react": "^19.7.0",
-    "@types/react": "^18.2.21",
+    "@mui/icons-material": "^5.14.9",
+    "@mui/material": "^5.14.10",
+    "@primer/octicons-react": "^19.8.0",
+    "@types/node": "^20.7.1",
+    "@types/react": "^18.2.22",
     "@types/react-dom": "^18.2.7",
-    "bootstrap-icons": "^1.10.5",
-    "gatsby": "^5.12.3",
+    "bootstrap-icons": "^1.11.1",
+    "gatsby": "^5.12.4",
     "gatsby-plugin-feed": "^5.12.0",
-    "gatsby-plugin-gatsby-cloud": "^5.12.0",
+    "gatsby-plugin-gatsby-cloud": "^5.12.1",
     "gatsby-plugin-google-analytics": "^5.12.0",
     "gatsby-plugin-image": "^3.12.0",
     "gatsby-plugin-manifest": "^5.12.0",
@@ -38,13 +39,13 @@
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "react-icons": "^4.10.1",
-    "typeface-montserrat": "1.1.13"
+    "react-icons": "^4.11.0",
+    "typeface-montserrat": "1.1.13",
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
     "prettier": "^3.0.3",
-    "wrangler": "^3.6.0"
+    "wrangler": "^3.9.0"
   },
   "homepage": "https://github.com/yisoda/yosuke-isoda.com#readme",
   "keywords": [
@@ -65,5 +66,5 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
-  "packageManager": "yarn@3.6.1"
+  "packageManager": "yarn@3.6.3"
 }
