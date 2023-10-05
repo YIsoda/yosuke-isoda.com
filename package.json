@@ -12,14 +12,14 @@
     "@emotion/styled": "^11.11.0",
     "@fontsource/merriweather-sans": "5.0.8",
     "@ibm/plex": "^6.3.0",
-    "@mui/icons-material": "^5.14.9",
-    "@mui/material": "^5.14.10",
+    "@mui/icons-material": "^5.14.12",
+    "@mui/material": "^5.14.12",
     "@primer/octicons-react": "^19.8.0",
-    "@types/node": "^20.7.1",
-    "@types/react": "^18.2.22",
-    "@types/react-dom": "^18.2.7",
+    "@types/node": "^20.8.2",
+    "@types/react": "^18.2.25",
+    "@types/react-dom": "^18.2.10",
     "bootstrap-icons": "^1.11.1",
-    "gatsby": "^5.12.4",
+    "gatsby": "^5.12.5",
     "gatsby-plugin-feed": "^5.12.0",
     "gatsby-plugin-gatsby-cloud": "^5.12.1",
     "gatsby-plugin-google-analytics": "^5.12.0",
@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "prettier": "^3.0.3",
-    "wrangler": "^3.9.0"
+    "wrangler": "^3.10.1"
   },
   "homepage": "https://github.com/yisoda/yosuke-isoda.com#readme",
   "keywords": [
