@@ -13,6 +13,16 @@ jobs:
         uses: actions/setup-node@v3.5.1
         with:
           node-version: 18
+      - name: Cache node modules
+        id: cache-yarn
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: ~/.yarn
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
       - name: Install dependencies
         run: yarn install
       - name: Build Gatsby
