@@ -10,21 +10,25 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Node.js environment
-        uses: actions/setup-node@v3.5.1
+        uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: Cache node modules
+      - name: Cache packages
         id: cache-yarn
         uses: actions/cache@v3
         env:
-          cache-name: cache-node-modules
+          cache-name: cache-packages
         with:
-          path: ~/.yarn
+          path: |
+            ~/.yarn
+            ~/.cache
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --immutable
       - name: Build Gatsby
         run: yarn build
       - name: Publish
@@ -35,4 +39,4 @@ jobs:
           projectName: yosuke-isoda-com
           directory: public
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-
+          wranglerVersion: '3'
