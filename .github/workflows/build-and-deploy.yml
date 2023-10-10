@@ -39,4 +39,4 @@ jobs:
           projectName: yosuke-isoda-com
           directory: public
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-
+          wranglerVersion: '3'
