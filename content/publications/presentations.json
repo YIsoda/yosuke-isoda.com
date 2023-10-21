@@ -1,4 +1,44 @@
-[	{
+[	
+	{
+		"id": "isodaPropertyControlStrontium2023",
+		"citation-key": "isodaPropertyControlStrontium2023",
+		"type": "paper-conference",
+		"container-title": "29th International Workshop on Oxide Electronics",
+		"event-place": "Busan, Republic of Korea",
+		"event-title": "29th International Workshop on Oxide Electronics",
+		"language": "en",
+		"publisher-place": "Busan, Republic of Korea",
+		"title": "Property control of the strontium iron oxide Sr(Fe,Co)O<sub><i>y</i></sub> by electrochemical insertions and extractions of protons",
+		"URL": "http://iwoe29.org/",
+		"author": [
+			{
+				"family": "Isoda",
+				"given": "Yosuke"
+			},
+			{
+				"family": "Kan",
+				"given": "Daisuke"
+			},
+			{
+				"family": "Majima",
+				"given": "Takuya"
+			},
+			{
+				"family": "Shimakawa",
+				"given": "Yuichi"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2023",
+					10,
+					16
+				]
+			]
+		}
+	},
+	{
 		"id": "isodaJSAP2023Autumn",
 		"container-title":"2023年第84回応用物理学会秋季学術講演会",
 		"author":[
