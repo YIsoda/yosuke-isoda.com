@@ -42,8 +42,13 @@ const doiUrl: (doi: string) => string = (doi) => `https://doi.org/${doi}`
 
 import { PresentationInfo } from "../../content/publications/presentationInfo";
 
-export const PresentationItem: React.FC<PresentationInfo & { urlType: UrlType } & { dateRange?: [Date, Date] } & { additionalInfo?: React.ReactNode }> = (props) =>
-    <>
+const toLocaleAuthorName = (name: { family: string, given: string }, lang?: "en" | "ja"): string =>
+    (typeof name == "string") ? name : lang == "ja" ? `${name.family} ${name.given}` : `${name.given} ${name.family}`;
+
+
+export const PresentationItem: React.FC<PresentationInfo & { urlType: UrlType } & { dateRange?: [Date, Date] } & { additionalInfo?: React.ReactNode } & { lang?: "en" | "ja" }> = (props) => {
+    const delimiter = props.lang=="ja"?"，":", ";
+    return <>
         {props.additionalInfo}
         <span dangerouslySetInnerHTML={{ __html: props.titleContent }} style={{ fontWeight: "bold" }}></span>
         <div>
@@ -51,10 +56,10 @@ export const PresentationItem: React.FC<PresentationInfo & { urlType: UrlType } 
                 props.author.reduce((previousValue: JSX.Element, currentValue, currentIndex) => {
                     const previousElement = currentIndex === 0
                         ? <></>
-                        : <>{previousValue}，</>;
+                        : <>{previousValue}{delimiter}</>;
                     return (currentValue.family === "Isoda" && currentValue.given === "Yosuke") || (currentValue.family === "磯田" && currentValue.given === "洋介")
-                        ? <>{previousElement}<span style={{ textDecoration: "underline" }}>{`${currentValue.family} ${currentValue.given}`}</span></>
-                        : <>{previousElement}{`${currentValue.family} ${currentValue.given}`}</>
+                        ? <>{previousElement}<span style={{ textDecoration: "underline" }}>{toLocaleAuthorName(currentValue, props.lang)}</span></>
+                        : <>{previousElement}{toLocaleAuthorName(currentValue, props.lang)}</>
                 }, <></>)
             }
         </div>
@@ -64,7 +69,8 @@ export const PresentationItem: React.FC<PresentationInfo & { urlType: UrlType } 
                 : props.date.toLocaleString("ja-JP", { dateStyle: "short" })}
         </div>
         <div>{props.urlType == "indivisualPage" ? <SimpleUrlText urlString={props.url} /> : <></>}</div>
-    </>;
+    </>
+    }
 
 
 import { PresentationInfos } from "../../content/publications/publications-list";
@@ -76,7 +82,7 @@ export const PresentationItems: React.FC<
         citations: [
             jaKey: string,
             enKey: string,
-            additionalInfo?: { dateRange?: [string, string]; urlType?: UrlType, additionalElement?: React.ReactNode }
+            additionalInfo?: { dateRange?: [string, string]; urlType?: UrlType, additionalElement?: React.ReactNode, lang?: "en" | "ja" }
         ][]
     }
 > = (props) => {
@@ -101,6 +107,7 @@ export const PresentationItems: React.FC<
                         urlType={addintionalInfo?.urlType ?? "indivisualPage"}
                         additionalInfo={addintionalInfo?.additionalElement}
                         doi={undefined}
+                        lang={addintionalInfo?.lang}
                     />
                 </li>
             }

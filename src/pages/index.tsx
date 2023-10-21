@@ -95,12 +95,13 @@ const BlogIndex = ({ data, location }) => {
         <h2>Presentations </h2>
 
         <PresentationItems citations={[
-          ["isodaJSAP2023Autumn","",{ additionalElement: <Chip color="success" label="New!" size="small" /> }],
-          ["isodaJSAP2023Spring", ""],
-          ["isodaCeramics2022", "isodaCeramics2022En", { urlType: "topPageOnly" }],
-          ["isodaJSAP2021Autumn", "isodaJSAP2021AutumnEn"],
-          ["isodaJSPMSpring2021", "", { dateRange: ["2021-06-01", "2021-06-03"] }],
-          ["isodaJSAP2021Spring", "isodaJSAP2021SpringEn"],
+          ["isodaPropertyControlStrontium2023", "", { additionalElement: <><Chip color="success" label="New" size="small" /><Chip color="info" label="International" size="small" /><Chip color="info" label="Poster" size="small" /></>, lang: "en" }],
+          ["isodaJSAP2023Autumn", "", { additionalElement: <Chip color="success" label="New!" size="small" />, lang: "ja" }],
+          ["isodaJSAP2023Spring", "", { lang: "ja" }],
+          ["isodaCeramics2022", "isodaCeramics2022En", { urlType: "topPageOnly", lang: "ja" }],
+          ["isodaJSAP2021Autumn", "isodaJSAP2021AutumnEn", { lang: "ja" }],
+          ["isodaJSPMSpring2021", "", { dateRange: ["2021-06-01", "2021-06-03"], lang: "ja" }],
+          ["isodaJSAP2021Spring", "isodaJSAP2021SpringEn", { lang: "ja" }],
         ]} />
       </li>
       {/* <ol style={{ listStyle: `none` }}>
