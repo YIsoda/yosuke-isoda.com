@@ -19,9 +19,8 @@ jobs:
         env:
           cache-name: cache-packages
         with:
-          path: |
-            ~/.yarn
-            ~/.cache
+          path: ~/.yarn
+            # ~/.cache
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-
