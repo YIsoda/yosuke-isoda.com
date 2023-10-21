@@ -47,7 +47,7 @@ const toLocaleAuthorName = (name: { family: string, given: string }, lang?: "en"
 
 
 export const PresentationItem: React.FC<PresentationInfo & { urlType: UrlType } & { dateRange?: [Date, Date] } & { additionalInfo?: React.ReactNode } & { lang?: "en" | "ja" }> = (props) => {
-    const delimiter = props.lang=="ja"?"，":", ";
+    const delimiter = props.lang === "ja" ? "，" : ", ";
     return <>
         {props.additionalInfo}
         <span dangerouslySetInnerHTML={{ __html: props.titleContent }} style={{ fontWeight: "bold" }}></span>
@@ -64,13 +64,13 @@ export const PresentationItem: React.FC<PresentationInfo & { urlType: UrlType } 
             }
         </div>
         <div>
-            {props.urlType == "topPageOnly" ? <a href={props.url}>{props.eventTitle}</a> : props.eventTitle}，{typeof props.dateRange !== "undefined"
+            {props.urlType == "topPageOnly" ? <a href={props.url}>{props.eventTitle}</a> : props.eventTitle}{delimiter}{typeof props.dateRange !== "undefined"
                 ? <>{props.dateRange[0].toLocaleString("ja-JP", { dateStyle: "short" })}&ndash;{props.dateRange[1].toLocaleString("ja-JP", { dateStyle: "short" })}</>
                 : props.date.toLocaleString("ja-JP", { dateStyle: "short" })}
         </div>
         <div>{props.urlType == "indivisualPage" ? <SimpleUrlText urlString={props.url} /> : <></>}</div>
     </>
-    }
+}
 
 
 import { PresentationInfos } from "../../content/publications/publications-list";
