@@ -1,5 +1,52 @@
 [	
 	{
+		"id": "isodaMRM2023",
+		"citation-key": "isodaMRM2023",
+		"type": "paper-conference",
+		"abstract": "MRM2023/IUMRS-ICA2023,Reversible property control of the strontium iron oxide SrFeO&lt;em&gt;&lt;sub&gt;y&lt;/sub&gt;&lt;/em&gt; by electrochemical proton insertions and extractions",
+		"container-title": "MRM2023/IUMRS-ICA2023",
+		"event-title": "The Materials Research Society of Japan",
+		"source": "confit.atlas.jp",
+		"title": "Reversible property control of the strontium iron oxide SrFeO<i><sub>y</sub></i> by electrochemical proton insertions and extractions",
+		"URL": "https://confit.atlas.jp/guide/event/mrm2023/subject/D1-O203-05/detail",
+		"author": [
+			{
+				"family": "Isoda",
+				"given": "Yosuke"
+			},
+			{
+				"family": "Kan",
+				"given": "Daisuke"
+			},
+			{
+				"family": "Majima",
+				"given": "Takuya"
+			},
+			{
+				"family": "Shimakawa",
+				"given": "Yuichi"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					1,
+					2
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2023",
+					12,
+					12
+				]
+			]
+		}
+	},
+	{
 		"id": "isodaPropertyControlStrontium2023",
 		"citation-key": "isodaPropertyControlStrontium2023",
 		"type": "paper-conference",
