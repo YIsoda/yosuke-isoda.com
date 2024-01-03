@@ -108,7 +108,7 @@ const BlogIndex = ({ data, location }) => {
         <PresentationItems citations={[
           ["isodaMRM2023", "", {additionalElement:<Chip color="info" label="International" size="small" />, lang:"en"}],
           ["isodaPropertyControlStrontium2023", "", { additionalElement: <><Chip color="info" label="International" size="small" /><Chip color="info" label="Poster" size="small" /></>, lang: "en", urlType: "topPageOnly" }],
-          ["isodaJSAP2023Autumn", "", { additionalElement: <Chip color="success" label="New!" size="small" />, lang: "ja" }],
+          ["isodaJSAP2023Autumn", "", { lang: "ja" }],
           ["isodaJSAP2023Spring", "", { lang: "ja" }],
           ["isodaCeramics2022", "isodaCeramics2022En", { urlType: "topPageOnly", lang: "ja" }],
           ["isodaJSAP2021Autumn", "isodaJSAP2021AutumnEn", { lang: "ja" }],
