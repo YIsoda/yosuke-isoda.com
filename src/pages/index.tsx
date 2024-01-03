@@ -106,8 +106,9 @@ const BlogIndex = ({ data, location }) => {
         <h2>Presentations </h2>
 
         <PresentationItems citations={[
-          ["isodaPropertyControlStrontium2023", "", { additionalElement: <><Chip color="success" label="New" size="small" /><Chip color="info" label="International" size="small" /><Chip color="info" label="Poster" size="small" /></>, lang: "en", urlType:"topPageOnly" }],
-          ["isodaJSAP2023Autumn", "", { additionalElement: <Chip color="success" label="New!" size="small" />, lang: "ja" }],
+          ["isodaMRM2023", "", {additionalElement:<Chip color="info" label="International" size="small" />, lang:"en"}],
+          ["isodaPropertyControlStrontium2023", "", { additionalElement: <><Chip color="info" label="International" size="small" /><Chip color="info" label="Poster" size="small" /></>, lang: "en", urlType: "topPageOnly" }],
+          ["isodaJSAP2023Autumn", "", { lang: "ja" }],
           ["isodaJSAP2023Spring", "", { lang: "ja" }],
           ["isodaCeramics2022", "isodaCeramics2022En", { urlType: "topPageOnly", lang: "ja" }],
           ["isodaJSAP2021Autumn", "isodaJSAP2021AutumnEn", { lang: "ja" }],
