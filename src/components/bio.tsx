@@ -68,6 +68,7 @@ const Bio = () => {
         <p>
           PhD student at <a href="https://www.scl.kyoto-u.ac.jp/~shimakgr/indexE.html">Advanced Solid State Chemistry Laboratory</a>, <a href="https://www.kuicr.kyoto-u.ac.jp/sites/icr/">Institute for Chemical Research</a>, Kyoto University.
         </p>
+        <p>日本学術振興会 特別研究員DC2 / JSPS Doctoral Course Research Fellowship (DC2) (2024/04/01-)</p>
         <p>Master of Science in Kyoto University</p>
         <p>Interested in transition metal oxides and thin film.</p>
       </>}
