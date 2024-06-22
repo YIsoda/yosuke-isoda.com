@@ -42,13 +42,20 @@ const BlogIndex = ({ data, location }) => {
           <li>
             <PublicationItem
               titleContent={<>Orientation-dependent electrochemical response of LaSrNiO<sub>4</sub> epitaxial films</>}
-              authorsInEnglish={["Lingling Xie", "Yosuke Isoda", "Takuya Majima", "Yufan Shen", "Daisuke Kan", "Yuichi Shimakawa"]} 
+              authorsInEnglish={["Lingling Xie", "Yosuke Isoda", "Takuya Majima", "Yufan Shen", "Daisuke Kan", "Yuichi Shimakawa"]}
               journalAbbreviation="J. Solid State Electrochem."
               volume=""
               page=""
               year={2023}
               doi="10.1007/s10008-023-05759-5"
-              />
+              additionalInfo={<>Published: 2023-11-23<br />
+                <ButtonGroup>
+                  <Button variant="contained" size="small" href="https://rdcu.be/dLAsr" startIcon={<OpenInNewIcon />}>
+                    Preview
+                  </Button>
+                </ButtonGroup>
+              </>}
+            />
           </li>
           <li>
             <PublicationItem
