@@ -41,6 +41,24 @@ const BlogIndex = ({ data, location }) => {
         <ol>
           <li>
             <PublicationItem
+              titleContent={<>Impact of Interfacial Proton Accumulation on Protonation in a Brownmillerite Oxide</>}
+              authorsInEnglish={["Lingling Xie", "Yosuke Isoda", "Shuri Nakamizo", "akuya Majima", "Saburo Hosokawa", "Kiyofumi Nitta", "Yuichi Shimakawa", "Daisuke Kan"]}
+              journalAbbreviation="Adv. Funct. Mater."
+              volume=""
+              page=""
+              year={2024}
+              doi="10.1002/adfm.202410084"
+              additionalInfo={<>Published: 2024-10-09<br />
+                <ButtonGroup>
+                  <Button variant="contained" size="small" href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202410084" startIcon={<OpenInNewIcon />}>
+                    View Open Access Article
+                  </Button>
+                </ButtonGroup>
+              </>}
+            />
+          </li>
+          <li>
+            <PublicationItem
               titleContent={<>Orientation-dependent electrochemical response of LaSrNiO<sub>4</sub> epitaxial films</>}
               authorsInEnglish={["Lingling Xie", "Yosuke Isoda", "Takuya Majima", "Yufan Shen", "Daisuke Kan", "Yuichi Shimakawa"]}
               journalAbbreviation="J. Solid State Electrochem."
