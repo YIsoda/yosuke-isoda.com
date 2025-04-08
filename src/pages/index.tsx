@@ -44,8 +44,8 @@ const BlogIndex = ({ data, location }) => {
               titleContent={<>Impact of Interfacial Proton Accumulation on Protonation in a Brownmillerite Oxide</>}
               authorsInEnglish={["Lingling Xie", "Yosuke Isoda", "Shuri Nakamizo", "akuya Majima", "Saburo Hosokawa", "Kiyofumi Nitta", "Yuichi Shimakawa", "Daisuke Kan"]}
               journalAbbreviation="Adv. Funct. Mater."
-              volume=""
-              page=""
+              volume={34}
+              page={2410084}
               year={2024}
               doi="10.1002/adfm.202410084"
               additionalInfo={<>Published: 2024-10-09<br />
