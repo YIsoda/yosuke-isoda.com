@@ -41,6 +41,24 @@ const BlogIndex = ({ data, location }) => {
         <ol>
           <li>
             <PublicationItem
+              titleContent={<> Stabilization of oxygen vacancy ordering and electrochemical-proton-insertion-and-extraction-induced large resistance modulation in strontium iron cobalt oxides Sr(Fe,Co)O<sub><i>y</i></sub></>}
+              authorsInEnglish={["Yosuke Isoda", "Thanh Ngoc Pham", "Ryotaro Aso", "Shuri Nakamizo", "Takuya Majima", "Saburo Hosokawa", "Kiyofumi Nitta", "Yoshitada Morikawa", "Yuichi Shimakawa", "Daisuke Kan"]}
+              journalAbbreviation="Nat. Commun."
+              volume={16}
+              page={56}
+              year={2025}
+              doi="10.1038/s41467-024-55517-y"
+              additionalInfo={<>Published: 2025-01-02<br />
+                <ButtonGroup>
+                  <Button variant="contained" size="small" href="https://www.nature.com/articles/s41467-024-55517-y" startIcon={<OpenInNewIcon />}>
+                    View Open Access Article
+                  </Button>
+                </ButtonGroup>
+              </>}
+            />
+          </li>
+          <li>
+            <PublicationItem
               titleContent={<>Impact of Interfacial Proton Accumulation on Protonation in a Brownmillerite Oxide</>}
               authorsInEnglish={["Lingling Xie", "Yosuke Isoda", "Shuri Nakamizo", "akuya Majima", "Saburo Hosokawa", "Kiyofumi Nitta", "Yuichi Shimakawa", "Daisuke Kan"]}
               journalAbbreviation="Adv. Funct. Mater."
