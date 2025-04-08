@@ -44,6 +44,7 @@ const Bio = () => {
         alt="Profile picture"
       /> */}
       {<>
+        <p>博士（理学） / Ph. D. in Science</p>
         <p className="social-links">
           <Button href="https://orcid.org/0000-0003-4445-9908" target="_blank" rel="noopener noreferrer" startIcon={<img alt="ORCID logo" src="ORCIDiD_iconvector.svg" width="16" height="16" />}>
             0000-0003-4445-9908
@@ -64,11 +65,11 @@ const Bio = () => {
             <img alt="LinkedIn Icon" src="In-Blue-Logo.png" height={24} />
           </IconButton>
         </p>
-        <p>Mail: isoda.yosuke.84z{"["}at]st.kyoto-u.ac.jp</p>
+        <p>Mail: isoda.yosuke.84z@kyoto-u.jp</p>
         <p>
-          PhD student at <a href="https://www.scl.kyoto-u.ac.jp/~shimakgr/indexE.html">Advanced Solid State Chemistry Laboratory</a>, <a href="https://www.kuicr.kyoto-u.ac.jp/sites/icr/">Institute for Chemical Research</a>, Kyoto University.
+          (2022/04/01 - 2025/03/31) Ph. D. student at <a href="https://www.scl.kyoto-u.ac.jp/~shimakgr/indexE.html">Advanced Solid State Chemistry Laboratory</a>, <a href="https://www.kuicr.kyoto-u.ac.jp/sites/icr/">Institute for Chemical Research</a>, Kyoto University.
         </p>
-        <p>日本学術振興会 特別研究員DC2 / JSPS Doctoral Course Research Fellowship (DC2) (2024/04/01-)</p>
+        <p>日本学術振興会 特別研究員DC2 / JSPS Doctoral Course Research Fellowship (DC2) (2024/04/01-2025/03/31)</p>
         <p>Master of Science in Kyoto University</p>
         <p>Interested in transition metal oxides and thin film.</p>
       </>}
