@@ -12,12 +12,12 @@
     "@emotion/styled": "^11.14.0",
     "@fontsource/merriweather-sans": "5.1.1",
     "@ibm/plex": "^6.4.1",
-    "@mui/icons-material": "^5.16.14",
-    "@mui/material": "^5.16.14",
+    "@mui/icons-material": "^6.4.6",
+    "@mui/material": "^6.4.6",
     "@primer/octicons-react": "^19.15.0",
-    "@types/node": "^20.17.19",
-    "@types/react": "^18.3.18",
-    "@types/react-dom": "^18.3.5",
+    "@types/node": "^22.13.5",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
     "bootstrap-icons": "^1.11.3",
     "gatsby": "^5.14.1",
     "gatsby-plugin-feed": "^5.14.0",
@@ -37,15 +37,15 @@
     "gatsby-transformer-remark": "^6.14.0",
     "gatsby-transformer-sharp": "^5.14.0",
     "prismjs": "^1.29.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-icons": "^4.12.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.5.0",
     "typeface-montserrat": "1.1.13",
     "typescript": "^5.7.3"
   },
   "devDependencies": {
-    "prettier": "^3.5.1",
-    "wrangler": "^3.109.0"
+    "prettier": "^3.5.2",
+    "wrangler": "^3.111.0"
   },
   "homepage": "https://github.com/yisoda/yosuke-isoda.com#readme",
   "keywords": [
