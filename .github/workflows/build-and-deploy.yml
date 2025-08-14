@@ -12,7 +12,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
       - name: Cache packages
         id: cache-yarn
         uses: actions/cache@v4
