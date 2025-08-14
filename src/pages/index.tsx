@@ -41,6 +41,51 @@ const BlogIndex = ({ data, location }) => {
         <ol>
           <li>
             <PublicationItem
+              titleContent={<>Correlation between structural properties and electrochemical proton insertion in (001) VO<sub>2</sub> epitaxial films</>}
+              authorsInEnglish={["Sota Fuji", "Yosuke Isoda", "Xie Lingling", "Mitsutaka Haruta", "Takuya Majima", "Yuichi Shimakawa", "Daisuke Kan",]}
+              journalAbbreviation="Appl. Phys. Express"
+              volume={18}
+              page="045501"
+              year={2025}
+              doi="10.35848/1882-0786/adc8f9"
+              additionalInfo={
+              <>Published: 2025-04-16<br/>
+                <ButtonGroup>
+                  <Button variant={"contained"} size={"small"} startIcon={<OpenInNewIcon />}
+                          href="https://iopscience.iop.org/article/10.35848/1882-0786/adc8f9">View Open Access Article</Button>
+                </ButtonGroup>
+              </>
+              }
+            />
+          </li>
+          <li>
+            <PublicationItem
+              titleContent={<>Effect of substrate-induced compressive strain on protonation of SrCoO<sub>2.5</sub> epitaxial films</>
+              }
+              authorsInEnglish={["Lingling Xie", "Yousuke Isoda", "Shuri Nakamizo", "Yufan Shen", "Sota Fuji", "Takuya Majima", "Yuichi Shimakawa", "Daisuke Kan",
+              ]}
+              journalAbbreviation="Jpn. J. Appl. Phys."
+              volume={64}
+              page="025501"
+              year={2025}
+              doi="10.35848/1347-4065/adaab7"
+              additionalInfo={<>Published: 2025-02-03<br/>
+                <ButtonGroup>
+                  <Button variant="contained" size="small" startIcon={<OpenInNewIcon />}
+                          href="https://iopscience.iop.org/article/10.35848/1347-4065/adaab7">View on IOPscience</Button>
+                </ButtonGroup>
+                <ButtonGroup >
+                  <Button variant="outlined" size="small" startIcon={<OpenInNewIcon />}
+                          href="http://hdl.handle.net/2433/292165">Self-archive</Button>
+                  {/* Todo: Available on 2026-02:*}
+                  {/* <Button variant="outlined" size="small"*/}
+                  {/*        href="" startIcon={<FiletypePdfIcon/>}>PDF</Button>*/}
+                </ButtonGroup>
+              </>}
+            />
+          </li>
+          <li>
+            <PublicationItem
               titleContent={<> Stabilization of oxygen vacancy ordering and electrochemical-proton-insertion-and-extraction-induced large resistance modulation in strontium iron cobalt oxides Sr(Fe,Co)O<sub><i>y</i></sub></>}
               authorsInEnglish={["Yosuke Isoda", "Thanh Ngoc Pham", "Ryotaro Aso", "Shuri Nakamizo", "Takuya Majima", "Saburo Hosokawa", "Kiyofumi Nitta", "Yoshitada Morikawa", "Yuichi Shimakawa", "Daisuke Kan"]}
               journalAbbreviation="Nat. Commun."
