@@ -41,6 +41,25 @@ const BlogIndex = ({ data, location }) => {
         <ol>
           <li>
             <PublicationItem
+              titleContent={<>Photoelectron holography characterization of protonated brownmillerite SrCoO<sub>2.5</sub> epitaxial films</>}
+              authorsInEnglish={["Daisuke Kan", "Yusuke Hashimoto", "Thanh Ngoc Pham", "Lingling Xie", "Yosuke Isoda", "Tomohiro Matsushita", "Yoshitada Morikawa", "Yuichi Shimakawa"]}
+              journalAbbreviation="J. Ceram. Soc. Jpn."
+              volume={133}
+              page="503"
+              year={2025}
+              doi="doi.org/10.2109/jcersj2.25062"
+              additionalInfo={
+                <>Published: 2025-07-10<br/>
+                  <ButtonGroup>
+                    <Button variant={"contained"} size={"small"} startIcon={<OpenInNewIcon />}
+                          href="https://www.jstage.jst.go.jp/article/jcersj2/133/9/133_25062/_article">View Open Access Article</Button>
+                  </ButtonGroup>
+                </>
+              }
+            />
+          </li>
+          <li>
+            <PublicationItem
               titleContent={<>Correlation between structural properties and electrochemical proton insertion in (001) VO<sub>2</sub> epitaxial films</>}
               authorsInEnglish={["Sota Fuji", "Yosuke Isoda", "Xie Lingling", "Mitsutaka Haruta", "Takuya Majima", "Yuichi Shimakawa", "Daisuke Kan",]}
               journalAbbreviation="Appl. Phys. Express"
