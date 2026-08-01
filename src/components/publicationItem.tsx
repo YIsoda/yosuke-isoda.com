@@ -23,7 +23,7 @@ export const PublicationItem: React.FC<PublicationInfo & { additionalInfo?: Reac
                     const previousElement = currentIndex === 0
                         ? <></>
                         : <>{previousValue}, </>;
-                    return currentValue === "Yosuke Isoda"
+                    return currentValue === "Yosuke Isoda" || currentValue === "Yousuke Isoda"
                         ? <>{previousElement}<span style={{ textDecoration: "underline" }}>{currentValue}</span></>
                         : <>{previousElement}{currentValue}</>
                 }, <></>)
@@ -57,7 +57,9 @@ export const PresentationItem: React.FC<PresentationInfo & { urlType: UrlType } 
                     const previousElement = currentIndex === 0
                         ? <></>
                         : <>{previousValue}{delimiter}</>;
-                    return (currentValue.family === "Isoda" && currentValue.given === "Yosuke") || (currentValue.family === "磯田" && currentValue.given === "洋介")
+                    return (currentValue.family === "Isoda" && currentValue.given === "Yosuke") ||
+                        (currentValue.family === "Isoda" && currentValue.given === "Yousuke") ||
+                        (currentValue.family === "磯田" && currentValue.given === "洋介")
                         ? <>{previousElement}<span style={{ textDecoration: "underline" }}>{toLocaleAuthorName(currentValue, props.lang)}</span></>
                         : <>{previousElement}{toLocaleAuthorName(currentValue, props.lang)}</>
                 }, <></>)
